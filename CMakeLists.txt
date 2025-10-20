@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.5)
 
 option(BUILD_TESTS "Build test programs" OFF)
 
@@ -14,3 +14,4 @@ if(BUILD_TESTS)
   add_executable(test test/main.cpp)
   target_link_libraries(test PRIVATE bcrypt)
 endif()
+
